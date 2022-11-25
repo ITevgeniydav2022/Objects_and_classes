@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Main {
     public static void main(String[] args) {
         Author pushkin = new Author("Александр", "Пушкин");
@@ -14,5 +16,18 @@ public class Main {
         queenOfSpades.setPublishingYear(1933);
         System.out.println(queenOfSpades.getTitle() + " " + queenOfSpades.getAuthorName() + " " +
                 queenOfSpades.getAuthorSurname() + " " + queenOfSpades.getPublishingYear());
+
+        // Задание 2
+        System.out.println("Задание 2");
+
+        System.out.println(pushkin.toString());
+        System.out.println(queenOfSpades);
+
+        System.out.println(pushkin.equals(pushkin));
+        System.out.println(queenOfSpades.equals(queenOfSpades));
+
+        System.out.println(pushkin.hashCode());
+        System.out.println(queenOfSpades.hashCode());
+
     }
 }
